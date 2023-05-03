@@ -22,9 +22,9 @@
                 </a>
             </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+            <main class="bg-cover bg-center h-full w-full" style="background-image :url(image/R.png)">
                 {{ $slot }}
-            </div>
+            </main>
         </div>
     </body>
 </html>
