@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-body">
                         <a href="{{ url('/notas/create') }}" class="btn btn-success btn-sm" title="Add New nota">
-                            <i class="fa fa-plus" aria-hidden="true"></i> Nuevo
+                            <i class="fa fa-plus" aria-hidden="true"></i> Nueva
                         </a>
                         <br />
                         <br />
@@ -23,7 +23,7 @@
                                         <th>Titulo</th>
                                         <th>Nota</th>
                                         <th>palabras clave</th>
-                                        <th>Actions</th>
+                                        <th>Opciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -37,11 +37,11 @@
                                             <td>
                                                 <a href="{{ url('/notas/' . $item->id) }}" title="View nota"><button
                                                         class="btn btn-info btn-sm"><i class="fa fa-eye"
-                                                            aria-hidden="true"></i> View</button></a>
+                                                            aria-hidden="true"></i> Ver</button></a>
                                                 <a href="{{ url('/notas/' . $item->id . '/edit') }}"
                                                     title="Edit nota"><button class="btn btn-primary btn-sm"><i
                                                             class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                                        Edit</button></a>
+                                                        Editar</button></a>
 
                                                 <form method="POST" action="{{ url('/notas' . '/' . $item->id) }}"
                                                     accept-charset="UTF-8" style="display:inline">
@@ -51,7 +51,7 @@
                                                         title="Delete nota"
                                                         onclick="return confirm(&quot;Confirm delete?&quot;)"><i
                                                             class="fa fa-trash-o" aria-hidden="true"></i>
-                                                        Delete</button>
+                                                        Eliminar</button>
                                                 </form>
                                             </td>
                                         </tr>
