@@ -1,11 +1,12 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Notas') }}
+            {{ __('Mis Notas') }}
         </h2>
     </x-slot>
     <div class="container">
         <div class="row">
+        <div class="bg-cover bg-center h-full w-full" style="background-image: url('https://th.bing.com/th/id/OIP.nnEgE0i9qS8veXiVY4fHBAAAAA?pid=ImgDet&rs=1')">
 
             <div class="col-md-9">
                 <div class="card">
@@ -20,9 +21,9 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Titulo</th>
+                                        <th>Nombre</th>
                                         <th>Nota</th>
-                                        <th>palabras clave</th>
+                                        <th>Palabras importantes</th>
                                         <th>Opciones</th>
                                     </tr>
                                 </thead>
@@ -64,5 +65,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </x-app-layout>

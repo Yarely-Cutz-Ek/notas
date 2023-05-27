@@ -18,10 +18,10 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Name</th>
-                                        <th>Address</th>
-                                        <th>Mobile</th>
-                                        <th>Actions</th>
+                                        <th>Nombre</th>
+                                        <th>Dato</th>
+                                        <th>Puntos</th>
+                                        <th>Opciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -35,11 +35,11 @@
                                             <td>
                                                 <a href="{{ url('/recordatorios/' . $item->id) }}" title="View recordatorio"><button
                                                         class="btn btn-info btn-sm"><i class="fa fa-eye"
-                                                            aria-hidden="true"></i> View</button></a>
+                                                            aria-hidden="true"></i> Ver</button></a>
                                                 <a href="{{ url('/recordatorios/' . $item->id . '/edit') }}"
                                                     title="Edit recordatorio"><button class="btn btn-primary btn-sm"><i
                                                             class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                                        Edit</button></a>
+                                                        Editar</button></a>
 
                                                 <form method="POST" action="{{ url('/recordatorios' . '/' . $item->id) }}"
                                                     accept-charset="UTF-8" style="display:inline">
@@ -49,7 +49,7 @@
                                                         title="Delete recordatorio"
                                                         onclick="return confirm(&quot;Confirm delete?&quot;)"><i
                                                             class="fa fa-trash-o" aria-hidden="true"></i>
-                                                        Delete</button>
+                                                        Eliminar</button>
                                                 </form>
                                             </td>
                                         </tr>
